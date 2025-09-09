@@ -58,7 +58,7 @@ Tech Stack
 
 How to Run
 1. Clone the repository:
-   git clone https://github.com/yourusername/netflix-etl-pipeline.git
+   git clone https://github.com/hxppyKhoza/Data-Pipeline
    cd netflix-etl-pipeline
 
 2. Create and activate a virtual environment:
