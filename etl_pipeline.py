@@ -51,7 +51,7 @@ print("\nData loaded into SQLite database: etl_netflix.db")
 # Step 4: Run SQL Queries
 # -----------------------------
 
-# Example 1: Top 10 actors with most appearances
+# Top 10 actors with most appearances
 query1 = """
 SELECT name, COUNT(*) as appearances
 FROM netflix_data
@@ -64,7 +64,7 @@ actors = pd.read_sql(query1, conn)
 print("\nTop 10 Actors by appearances:")
 print(actors)
 
-# Example 2: Number of movies per year
+# Number of movies per year
 query2 = """
 SELECT release_year, COUNT(*) as movie_count
 FROM netflix_data
@@ -78,3 +78,4 @@ print("\nMovies per Year (last 10 years):")
 print(movies_by_year)
 
 conn.close()
+
